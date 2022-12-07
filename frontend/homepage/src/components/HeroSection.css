@@ -11,37 +11,31 @@ video {
     height: 15%;
     width: 100%;
     position: absolute;
+    padding: 0% 2% 0% 2%;
     top: 0px;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   .herologo-1 {
     height: 80%;
-    padding-left: 20%;
-    position: absolute;
-    top: 0px;
   }
 
   .herologo-2{
     height: 80%;
-    padding-left: 40%;
-    
-    position: absolute;
-    top: 0px;
   }
 
   .herologo-3{
     height: 80%; 
-    padding-left: 75%;
-    position: absolute;
-    top: 0px;
   }
 
 /* upper part background image container */
   .hero-container {
     background: url('/public/images/img-2.png') center center/cover no-repeat;
-    height: 100vh;
+    height: 750px;
     width: 100%;
+    background-size: 100% 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,9 +49,13 @@ video {
   .hero-container > h1 {
     color: #fff;
     font-size: 50px;
+    font-size: 5.9vw;
     margin-top: -100px;
     position: relative; 
     top: 70px;
+    font-family: 'Raleway', sans-serif;
+    
+    
     
   }
   
@@ -65,12 +63,12 @@ video {
     margin-top: 8px;
     color: #fff;
     font-size: 20px;
+    font-size: 3vmin;
     position: relative; 
     top: 70px;
     width: 80%;
     text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-      'Lucida Sans', Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     
   }
   
@@ -136,13 +134,21 @@ video {
     .hero-container > p {
       font-size: 30px;
     }
+
+   @media screen and (max-width: 768px){
+
+    .hero-top > img{
+      height: 45%;
+    }
+    
+   } 
   
     .btn-mobile {
       display: block;
       text-decoration: none;
     }
   
-    .btn {
+    .btns {
       width: 100%;
     }
   }

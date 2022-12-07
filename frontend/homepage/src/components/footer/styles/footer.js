@@ -17,7 +17,6 @@ export const Wrapper = styled.div`
     justify-content: right;
     max-width: 100%;
     margin: 0 auto;
-    /* background: red; */
 `
 
 export const Column = styled.div`
@@ -25,15 +24,16 @@ export const Column = styled.div`
   flex-direction: column;
   text-align: left;
   margin-left: 10px;
+  width: 50%;
 `;
 
 export const Row = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  grid-gap: 20px;
-
-  @media (max-width: 1000px) {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  display: flex;
+  flex-direction : row;
+  justify-content : space-between;
+  padding-top : 2%;
+  @media (max-width: 960px) {
+    
   }
 `;
 

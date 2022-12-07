@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .home,
@@ -56,11 +56,15 @@
 
 body {
   background: #fef5ec;
-  font-family: "Montserrat";
+  font-family: 'Raleway', sans-serif;
 }
 
 .App {
   margin-top: 30px;
+}
+
+.head {
+  text-align: center;
 }
 
 .App h1 {
@@ -68,10 +72,12 @@ body {
   margin-bottom: 18px;
   text-align: center;
   color: #23188c;
+  margin-top: 450px;
 }
 .App h6 {
   font-size: 18px;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
+  margin-top: 0px;
   text-align: center;
   color: #23188c;
 }
@@ -83,7 +89,7 @@ body {
   width: auto;
   text-align: center;
   flex-wrap: wrap;
-  margin-top: 30%;
+  margin-top: 5px;
 }
 
 
@@ -130,7 +136,7 @@ body {
   border-radius: 20px;
   font-size: 16px;
   color: white;
-  font-family: "Montserrat";
+  font-family: 'Raleway', sans-serif;
   cursor: pointer;
   margin-bottom: 1rem;
   border: 0rem;
@@ -141,4 +147,16 @@ body {
 .card_button:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 4%;
+  
+}
+
+.col-1{
+  width: 50%;
 }
